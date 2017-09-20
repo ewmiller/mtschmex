@@ -4,6 +4,8 @@
 	<title><% title %></title>
 	<!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="stylesheets/materialize.min.css"  media="screen,projection"/>
 	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
@@ -12,25 +14,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-	<div class="container">
-		<div class="heading">
-			<div class="center-align">
-				<h1><%= title %>!</h1>
-				<p>The only interdimensional crypto exchange that trades schmeckles for bitcoins!
-				</p>
-				<p>Scroll to learn more or whatever.</p>
-				<br>	
+	<nav class="grey darken-4" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="#" class="brand-logo">
+				<i class="fa fa-btc fa-lg" aria-hidden="true"></i>
+				<i class="fa fa-arrows-h" aria-hidden="true"></i>
+				SHM
+			</a>
+		  <ul class="right hide-on-med-and-down">
+		    <li><a href="#">Log In</a></li>
+		  </ul>
+
+		  <ul id="nav-mobile" class="side-nav">
+		    <li><a href="#">Navbar Link</a></li>
+		  </ul>
+		  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+
+	<!-- TODO: make this the same background color as the nav? -->
+	<div class="section">
+		<div class="container">
+			<div class="heading">
+				<div class="center-align">
+					<h1 class="header center"><%= title %>!</h1>
+					<p>The only interdimensional crypto exchange that trades schmeckles for bitcoins!
+					</p>
+					<p>Scroll to learn more or whatever.</p>
+					<br>	
+				</div>
+				<div class="row">
+					<div class="col s6 right-align">
+						<a href="/register" class="waves-effect waves-light deep-orange lighten-1 btn">Register</a>
+					</div>	
+					<div class="col s6 left-align">
+						<a href="/login" class="waves-effect waves-light deep-orange lighten-1 btn">  Log In  </a>
+					</div>	
+				</div>
+				
 			</div>
+		</div>
+	</div>
+
+	<br/>
+
+	<div class="section">
+		<div class="container">
 			<div class="row">
-				<div class="col s3">
-					
+				<div class="col s12 m6 left-align">
+					<div class="card brown lighten-1">
+						<div class="card-content white-text">
+							<span class="card-title">Recent News</span>						
+						</div>
+					</div>
 				</div>
-				<div class="col s6">
-					<a href="/register" class="waves-effect waves-light btn">Register</a>
-					<a href="/login" class="waves-effect waves-light btn">Log In</a>				
+				<div class="col s12 m6 right-align">
+					<div class="card brown lighten-1">
+						<div class="card-content white-text">
+							<span class="card-title">User Testimonials</span>						
+						</div>
+					</div>
 				</div>
 			</div>
-			
 		</div>
 	</div>
 
