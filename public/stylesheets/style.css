@@ -16,6 +16,10 @@ a {
 	text-align: center;
 }
 
+.heading p {
+	font-size: 1.1em; 
+}
+
 .btn-heading {
 	margin-left: 10px;
 	margin-right: 10px;
