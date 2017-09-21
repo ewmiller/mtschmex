@@ -12,11 +12,15 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="javascript/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="javascript/materialize.min.js"></script>
 </head>
 <body>
 	<nav class="grey darken-4" role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="#" class="brand-logo">
+			<a id="logo-container" href="/" class="brand-logo">
 				<i class="fa fa-btc fa-lg" aria-hidden="true"></i>
 				<i class="fa fa-arrows-h" aria-hidden="true"></i>
 				SHM
@@ -48,7 +52,7 @@
 						<a href="/register" class="waves-effect waves-light light-blue darken-3 btn">Register</a>
 					</div>	
 					<div class="col s6 left-align">
-						<a href="/login" class="waves-effect waves-light  light-blue darken-3 btn">  Log In  </a>
+						<a class="waves-effect waves-light  light-blue darken-3 btn toggle-login">Log In</a>
 					</div>	
 				</div>
 				
@@ -58,6 +62,38 @@
 
 	<br/>
 
+	<div class="hidden" id="login-form">
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col s2 m3 l4"></div>
+				<div class="col s10 m6 l4">
+					<div class="card grey lighten-5">
+						<div class="card-content">
+							<span class="card-title">Log In <a><i class="material-icons right tiny black-text toggle-login">close</i></a></span>
+							<div class="row">
+								<div class="input-field col s6">
+									<input placeholder="Username" id="user_name" type="text" class="validate">
+								</div>
+								<div class="input-field col s6">
+									<input placeholder="Password" id="password" type="text" class="validate">
+								</div>
+							</div>
+						</div>
+						<div class="card-action">
+							<a href="/">Submit</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s2 m3 l4"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<br/>
+
+	<div id="news-testimonials">
 	<div class="section">
 		<div class="container">
 			<div class="row">
@@ -71,7 +107,7 @@
 							<div class="card-content">
 								<span class="card-title">Strength of Schmeckle Rebounds</span>
 								<p>
-									The Schmeckle experienced a brief drop in value due to complications from the accidental release of the Truth Tortoise. Now it's on the way back up, and investors hope it will soon reach parity with its previous strength.
+									The destruction of the Citadel caused a drop in Schmeckle value and a rise in BTC value, as many experts predicted. Now the Schmeckle is gaining traction once again - but is this increase a lasting trend, and will SHM reach parity with its previous value?
 								</p>
 							</div>
 							<div class="card-action">
@@ -109,7 +145,7 @@
 							<div class="card-content">
 								<span class="card-title">Rick C-137</span>
 								<p>
-									"Yeah, MtSchmex is pretty good or whatever. No currency is immune to crashing or disappearing from reality so I use it to *burrrp* shuffle around my assets."
+									"Yeah, MtSchmex is pretty good, I guess. I use it to shuffle around my assets because no currency is immune to *burrrp* crashing or disappearing from reality."
 								</p>
 							</div>
 						</div>
@@ -145,11 +181,15 @@
 			</div>
 		</div>
 	</div>
+	</div>
 
+	<script type="text/javascript" charset="utf-8" async defer>
+		$(document).ready(function(){
+			$(".toggle-login").click(function(){
+				$("#login-form").slideToggle();
+			});
+		});
+	</script>
 
-
-	<!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="javascript/materialize.min.js"></script>
 </body>
 </html>

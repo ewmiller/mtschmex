@@ -24,3 +24,11 @@ a {
 .card-image {
 	padding: 10px !important;
 }
+
+.hidden {
+	display: none;
+}
+
+.toggle-login {
+	cursor: pointer;
+}
