@@ -20,3 +20,7 @@ a {
 	margin-left: 10px;
 	margin-right: 10px;
 }
+
+.card-image {
+	padding: 10px !important;
+}
