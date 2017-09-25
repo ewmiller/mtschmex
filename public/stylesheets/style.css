@@ -41,3 +41,7 @@ a {
 	padding-right: 2em !important;
 	padding-left: 2em !important;
 }
+
+.padded-icon {
+	padding-right: 10px !important;
+}
