@@ -58,7 +58,7 @@
 							<a class="waves-effect waves-light  amber darken-3 btn toggle-login">Log In</a>
 						</div>	
 						<div class="col s5 left-align">
-							<a class="waves-effect waves-light amber darken-3 btn">About Us</a>
+							<a class="waves-effect waves-light amber darken-3 btn scroll-about">About Us</a>
 						</div>
 					</div>
 					
@@ -208,7 +208,7 @@
 		
 		<!-- ABOUT -->
 		<div class="container">
-		<div class="section">
+		<div class="section about">
 
 			<div class="row">
 				<div class="col s12">
@@ -272,10 +272,6 @@
 							<i class="fa fa-envelope fa-lg padded-icon" aria-hidden="true"></i> <a class="white-text" href="mailto:admin@mtschmex.io">admin@mtschmex.io</a>
 						</li>
 						<li><p> </p></li>
-						<li>
-							<i class="fa fa-rocket fa-lg padded-icon" aria-hidden="true"></i> Dimension C-137 (non-Kronenberg timeline)
-						</li>
-						<li><p> </p></li>
 					</ul>
 				</div>
 				<div class="col s12 m4 center-align">
@@ -299,6 +295,11 @@
 		$(document).ready(function(){
 			$(".toggle-login").click(function(){
 				$("#login-form").slideToggle();
+			});
+			$(".scroll-about").click(function(){
+				$('html, body').animate({
+					scrollTop: $(".about").offset().top
+				}, 1000);
 			});
 		});
 	</script>
