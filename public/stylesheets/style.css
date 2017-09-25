@@ -36,3 +36,8 @@ a {
 .toggle-login {
 	cursor: pointer;
 }
+
+.padded-column {
+	padding-right: 2em !important;
+	padding-left: 2em !important;
+}
