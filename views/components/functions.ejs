@@ -1,0 +1,13 @@
+<script type="text/javascript" charset="utf-8" async defer>
+	$(document).ready(function(){
+		$("#fade-in").fadeIn("slow");
+		$(".toggle-login").click(function(){
+			$("#login-form").slideToggle();
+		});
+		$(".scroll-about").click(function(){
+			$('html, body').animate({
+				scrollTop: $(".about").offset().top
+			}, 1000);
+		});
+	});
+</script>

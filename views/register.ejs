@@ -16,23 +16,7 @@
 </head>
 <body>
 
-	<nav class="grey darken-4" role="navigation">
-		<div class="nav-wrapper container">
-			<a id="logo-container" href="/" class="brand-logo">
-				<i class="fa fa-btc fa-lg" aria-hidden="true"></i>
-				<i class="fa fa-arrows-h" aria-hidden="true"></i>
-				SHM
-			</a>
-		  <ul class="right hide-on-med-and-down">
-		    <li><a href="#">Log In</a></li>
-		  </ul>
-
-		  <ul id="nav-mobile" class="side-nav">
-		    <li><a href="#">Log In</a></li>
-		  </ul>
-		  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-		</div>
-	</nav>
+	<%- include('components/nav'); %>
 
 	<div class="section">
 		<div class="row">
@@ -84,5 +68,6 @@
 			</div>
 		</div>
 	</div>
+
 </body>
 </html>
